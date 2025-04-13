@@ -15,6 +15,14 @@ public class Main {
         System.out.print("Enter the amount of time: ");
         int amountOfYears = scanner.nextInt();
 
+        double annualInterestRate = interestRate / 100;
+        double futureValueFormula = principal2 * Math.pow((1 + annualInterestRate / 365), 365 * amountOfYears);
+
+        double interestEarned = futureValueFormula - principal2;
+
+        System.out.printf("Your future value: %.2f", futureValueFormula);
+        System.out.printf("\nInterest earned: %.2f", interestEarned);
+
         //Calculator 1
 
 //        System.out.print("1. Enter principal: ");

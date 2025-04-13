@@ -21,9 +21,10 @@ FV = P × (1 + (r / 365))^(365 × t)
 
 To determine how much money is earned within a certain amount of time. 
 
-What I found interesting about both calculators is how java 
-can be used for everyday stuff and stuffs you don't really think about coding. 
-If you can't find something you're looking for then it's best to do it yourself 
-thanks to the help of java. 
+double formula = principal * (monthlyInterestRate * Math.pow(1 + monthlyInterestRate, loan * 12) / (Math.pow(1 + monthlyInterestRate, loan * 12) -1));
+What I found interesting about this line of code is how we can use it for when we want to find out 
+how much we'll make overtime without the need of going to someone for help when we can build the calculator ourselves.
+
+
 ![img_2.png](img_2.png)
 ![img_1.png](img_1.png)
